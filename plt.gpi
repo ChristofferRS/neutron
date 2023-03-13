@@ -1,0 +1,8 @@
+set term pngcairo size 1400,800
+set output "plot.png"
+set xlabel 'x'
+set ylabel 'y'
+set grid
+set title "Neutron Flux"
+set size ratio 1
+plot "out.txt" u 1:2:3 with image notitle
